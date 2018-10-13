@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{title}}</title>
+</head>
+<body>
+	<header></header>
+	<div>
+		{% block base %}
+
+		{% endblock base %}
+	</div>
+
+	<footer>
+		<a href="{% url 'myapp:index' %}">
+			<dl>
+				<dt><span></span></dt>
+				<dd>index</dd>
+			</dl>
+		</a>
+
+		<a href="{% url 'myapp:cart' %}">
+			<dl>
+				<dt><span></span></dt>
+				<dd>cart</dd>
+			</dl>
+		</a>
+	</footer>
+
+	
+
+
+</body>
+</html>

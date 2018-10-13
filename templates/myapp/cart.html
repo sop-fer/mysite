@@ -1,0 +1,9 @@
+{% extends 'myapp/base.html' %}
+
+{% block base %}
+<h1>这是index页面</h1>
+{% for s in slist %}
+	
+	<a href="{% url 'myapp:my'%}?id={{s.pk}}">{{s.sname}}</a>
+{% endfor %}
+{% endblock base %}
